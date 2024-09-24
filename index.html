@@ -14,7 +14,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="alternate" href="index.xml" type="application/rss+xml" title="Speech Research">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-  <title>AudioLDM: Text-to-Audio Generation with Latent Diffusion Models - Speech Research</title>
+  <title>MAJORScore: A Novel Metric for Evaluating Multimodal Relevance via Joint Representation</title>
 </head>
 
 <body rightmargin="150" leftmargin="150" topmargin="100" bottommargin="100" line-height:160%>
@@ -60,20 +60,13 @@
               <font color="000093">Abstract</font>
             </h2>
             <p style="text-align: justify;">
-              <font color="061E61"> Text-to-audio (TTA) system has recently gained attention for its ability to
-                synthesize general audio based on text descriptions.
-                However, previous studies in TTA have limited generation quality with high computational costs.
-                In this study, we propose AudioLDM, a TTA system that is built on a latent space to learn the continuous
-                audio representations from contrastive language-audio pretraining (CLAP) latents.
-                The pretrained CLAP models enable us to train latent diffusion models (LDMs) with audio embedding while providing text embedding
-                as a condition during sampling.
-                By learning the latent representations of audio signals and their compositions without modeling the
-                cross-modal relationship, AudioLDM is advantageous in both generation quality and computational
-                efficiency.
-                Trained on AudioCaps with a single GPU, AudioLDM achieves state-of-the-art TTA performance measured by
-                both objective and subjective metrics (e.g., frechet distance). Moreover, AudioLDM is the first TTA
-                system that enables various text-guided audio manipulations (e.g., style transfer) in a zero-shot
-                fashion. </font>
+              <font color="061E61"> The multimodal relevance metric is usually bor-rowed from the embedding ability of pretrained contrastivelearning models for bimodal data, 
+        which is used to evaluatethe correlation between cross-modal data (e.g., CLIP). However,the commonly used evaluation metrics are only suitable forthe associated analysis 
+        between two modalities, which greatlylimits the evaluation of multimodal similarity. Herein, we proposeMAJORScore, a brand-new evaluation metric for the relevanceof multiple 
+        modalities (N modalities, N>=3) via multimodal jointrepresentation for the first time. The ability of multimodal jointrepresentation to integrate multiple modalities into the 
+        samelatent space can accurately represent different modalities at onescale, providing support for fair relevance scoring. Extensiveexperiments have shown that MAJORScore 
+        increases by 26.03%-64.29% for consistent modality and decreases by 13.28%-20.54%for inconsistence compared to existing methods. MAJORScoreserves as a more reliable metric 
+        for evaluating similarity on large-scale multimodal datasets and multimodal model performanceevaluation. </font>
             </p>
 
             <h2 id="note">
